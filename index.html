@@ -3,10 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nyan Cat - HTML5+CSS3+JS</title>
-
 	<link rel="stylesheet" href="css/nyan.css"/>
+	<link rel="stylesheet" href="bower_components/particles.js/particles.css "/>
 </head>
 <body>
+        <script type="text/javascript">
+            if (window.location.protocol != "https:"){
+            	document.write('<div id="particles-js"><\/div> <script src="bower_components\/particles.js\/particles.min.js"><\/script> <script src="bower_components\/particles.js\/particles.config.js"><\/script>')
+            } else {
+            	document.write('<div id="particles-js-no"><\/div>')
+            }
+        </script>
 	<div class="sparks-combo">
 		<div class="spark"></div>
 		<div class="spark"></div>
@@ -44,5 +51,6 @@
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Nyan Stuff -->
 	<script src="js/nyan.js"></script>
+
 </body>
 </html>
